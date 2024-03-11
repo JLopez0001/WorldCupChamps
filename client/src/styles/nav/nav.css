@@ -1,0 +1,23 @@
+.container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: #f9dbbb;
+  height: 110px;
+}
+
+.soccerball {
+  height: 75px;
+  width: 75px;
+  margin: auto 20px;
+}
+
+.main-nav-links {
+  display: flex;
+}
+
+.nav-links {
+  margin: auto 20px;
+
+  display: flex;
+}
