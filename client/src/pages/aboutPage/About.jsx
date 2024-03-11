@@ -48,7 +48,7 @@ function About() {
             Click to journey through the legacy and get closer to the action
             than ever before.
           </p>
-          <Link to="/home/teams">
+          <Link to="/teams">
             <button>See Winners</button>
           </Link>
         </aside>

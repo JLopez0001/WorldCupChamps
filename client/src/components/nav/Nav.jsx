@@ -19,7 +19,7 @@ function Nav() {
           </div>
           <div className="nav-links">
             <NavLink to="/">About |</NavLink>
-            <NavLink to="/home/teams"> Home |</NavLink>
+            <NavLink to="/teams"> Home |</NavLink>
             <NavLink to="/create-team">Create</NavLink>
           </div>
         </div>

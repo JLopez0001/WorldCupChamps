@@ -1,0 +1,82 @@
+.world-cup-winner {
+  width: 100%;
+  height: 850px;
+}
+
+.content-container {
+  background-color: #4e6e81;
+}
+
+.title {
+  margin: 0;
+}
+
+.team-container {
+  background-color: #3f7106; /* Adjust color to match your screenshot */
+  border-radius: 10px;
+  color: white;
+  display: flex;
+  flex-direction: column;
+  padding: 20px;
+  max-width: 350px; /* Adjust based on your design preference */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Simple shadow for depth */
+  margin: 40px;
+}
+
+.world-cup-year {
+  font-size: 30px;
+}
+
+.team {
+  margin-bottom: 20px;
+}
+
+.winning-nation {
+  margin: 10px 0;
+  font-size: 30px;
+  text-align: center;
+}
+
+.nation-flag {
+  width: 100%; /* Make it responsive to the container width */
+  height: auto; /* Keep aspect ratio */
+  border: 1px solid #000; /* Add border to the flag */
+}
+
+.match-stats {
+  text-align: center;
+  margin: 10px;
+}
+
+.stats {
+  background-color: #2e2e2e; /* Dark background for stats */
+  padding: 10px;
+  border-radius: 5px;
+  display: flex;
+  flex-direction: column;
+  font-size: 20px;
+  align-items: center;
+}
+
+.stats p {
+  margin: 10px 0;
+}
+
+.stats p span {
+  font-weight: bolder;
+}
+
+.more-info-button {
+  background-color: #c0392b; /* Adjust color to match your screenshot */
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 5px;
+  margin-top: 20px;
+  cursor: pointer;
+  width: 100%;
+}
+
+.more-info-button:hover {
+  background-color: #a93226; /* Slightly darker on hover */
+}
