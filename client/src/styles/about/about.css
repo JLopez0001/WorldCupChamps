@@ -1,0 +1,25 @@
+.intro {
+  height: 500px;
+  color: white;
+}
+
+.intro-title {
+  margin-top: 0;
+}
+
+.kicking-img {
+  height: 300px;
+  width: 300;
+}
+
+.aside-container {
+  background-color: #4e6e81;
+}
+
+.aside-content {
+  float: right;
+}
+
+.aside-content-2 {
+  float: left;
+}

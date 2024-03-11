@@ -18,9 +18,9 @@ function Nav() {
             </NavLink>
           </div>
           <div className="nav-links">
-            <NavLink>About |</NavLink>
-            <NavLink>Home |</NavLink>
-            <NavLink>Create</NavLink>
+            <NavLink to="/">About |</NavLink>
+            <NavLink to="/home/teams"> Home |</NavLink>
+            <NavLink to="/create-team">Create</NavLink>
           </div>
         </div>
       </nav>
