@@ -4,6 +4,7 @@
   justify-content: space-between;
   background-color: #f9dbbb;
   height: 110px;
+  text-decoration: none;
 }
 
 .soccerball {
@@ -20,4 +21,18 @@
   margin: auto 20px;
 
   display: flex;
+}
+
+.link {
+  text-decoration: none;
+  font-size: 25px;
+  color: black;
+}
+
+.active-link {
+  font-weight: bold;
+}
+
+.separator {
+  margin-right: 10px; /* Adjust as necessary to get the desired spacing */
 }
