@@ -14,6 +14,7 @@ function App() {
         <Route path="/" element={<About />} />
         <Route path="/teams" element={<Teams />} />
         <Route path="/teams/:id" element={<TeamDetail />} />
+        <Route path="/teams/:id/edit" element={<TeamDetail />} />
       </Routes>
       <Footer />
     </div>

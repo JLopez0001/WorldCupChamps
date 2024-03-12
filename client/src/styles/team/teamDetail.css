@@ -1,0 +1,26 @@
+.team-header {
+  background-color: #2e3840;
+  text-align: center;
+}
+
+.team-text {
+  margin: 0;
+}
+
+.title {
+  text-align: center;
+}
+.individual-container {
+  background-color: white; /* Adjust color to match your screenshot */
+  border-radius: 10px;
+  color: black;
+  display: flex;
+  flex-direction: column;
+  padding: 20px;
+  max-width: 350px; /* Adjust based on your design preference */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Simple shadow for depth */
+  margin: 40px;
+}
+.stats {
+  color: white;
+}
