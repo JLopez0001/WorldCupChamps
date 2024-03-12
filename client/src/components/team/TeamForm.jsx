@@ -1,12 +1,12 @@
 import React from "react";
 
-function TeamForm({ teamData, handleChange, id, handleSubmit }) {
+function TeamForm({ teamData, handleChange, id, onSubmit }) {
   const formType = id !== null ? "Edit" : "Create";
 
   return (
     <div>
       <h1>{formType} Team</h1>
-      <form className="form-container" onSubmit={handleSubmit}>
+      <form className="form-container" onSubmit={onSubmit}>
         <div>
           <label htmlFor="country-name">Country Name: </label>
           <input
@@ -60,43 +60,27 @@ function TeamForm({ teamData, handleChange, id, handleSubmit }) {
           />
           <label htmlFor="over-time">Overtime? </label>
 
-          <select id="over-time" name="extraTime" onChange={handleChange}>
-            {teamData.extraTime ? (
-              <>
-                <option value={true} selected>
-                  Yes
-                </option>
-                <option value={false}>No</option>
-              </>
-            ) : (
-              <>
-                <option value={false} selected>
-                  No
-                </option>
-                <option value={true}>Yes</option>
-              </>
-            )}
+          <select
+            id="over-time"
+            name="extraTime"
+            value={teamData.extraTime}
+            onChange={handleChange}
+          >
+            <option value={true}>Yes</option>
+            <option value={false}>No</option>
           </select>
         </div>
 
         <div>
           <label htmlFor="penalties">Penalties? </label>
-          <select id="penalties" name="wentToPenalties" onChange={handleChange}>
-            {teamData.wentToPenalties ? (
-              <>
-                <option value={true} selected>
-                  Yes
-                </option>
-                <option value={false}>No</option>
-              </>
-            ) : (
-              <>
-                <option value={false} selected>
-                  No
-                </option>
-                <option value={true}>Yes</option>
-              </>
-            )}
+          <select
+            id="penalties"
+            name="wentToPenalties"
+            value={teamData.wentToPenalties}
+            onChange={handleChange}
+          >
+            <option value={true}>Yes</option>
+            <option value={false}>No</option>
           </select>
 
           <label htmlFor="top-scorer">Top Scorer: </label>

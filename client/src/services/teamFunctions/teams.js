@@ -36,3 +36,12 @@ export const editTeam = async (id, data) => {
     console.log("Error Editing Your Team");
   }
 };
+
+export const createTeam = async (data) => {
+  try {
+    const response = await api.post("/teams", data);
+    return response.data;
+  } catch (error) {
+    console.log("Error Creating Team");
+  }
+};

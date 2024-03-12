@@ -1,5 +1,6 @@
 import { Link } from "react-router-dom";
 import "../../styles/team/teams.css";
+
 function Team({ team }) {
   return (
     <div className="team-container">
