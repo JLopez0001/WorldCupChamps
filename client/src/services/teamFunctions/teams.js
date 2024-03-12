@@ -27,3 +27,12 @@ export const deleteTeam = async (id) => {
     console.log("Error Deleting Your Team");
   }
 };
+
+export const editTeam = async (id, data) => {
+  try {
+    const response = await api.put(`/teams/${id}`, data);
+    return response.data;
+  } catch (error) {
+    console.log("Error Editing Your Team");
+  }
+};

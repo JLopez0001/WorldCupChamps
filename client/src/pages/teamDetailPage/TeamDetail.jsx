@@ -11,7 +11,6 @@ function TeamDetail() {
 
   const fetchTeam = async () => {
     const oneTeam = await getTeam(id);
-    console.log(oneTeam);
     setTeamData(oneTeam);
   };
 
@@ -21,7 +20,7 @@ function TeamDetail() {
 
   const handleDelete = async () => {
     await deleteTeam(id);
-    nav("/");
+    nav("/teams");
   };
 
   return (

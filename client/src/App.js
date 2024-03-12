@@ -5,6 +5,7 @@ import { Routes, Route } from "react-router-dom";
 import About from "./pages/aboutPage/About.jsx";
 import Teams from "./pages/homePage/Teams.jsx";
 import TeamDetail from "./pages/teamDetailPage/TeamDetail.jsx";
+import TeamEdit from "./pages/editPage/TeamEdit.jsx";
 
 function App() {
   return (
@@ -14,7 +15,7 @@ function App() {
         <Route path="/" element={<About />} />
         <Route path="/teams" element={<Teams />} />
         <Route path="/teams/:id" element={<TeamDetail />} />
-        <Route path="/teams/:id/edit" element={<TeamDetail />} />
+        <Route path="/teams/:id/edit" element={<TeamEdit />} />
       </Routes>
       <Footer />
     </div>
