@@ -2,14 +2,24 @@
   background-color: #2e3840;
   text-align: center;
 }
-
-.team-text {
-  margin: 0;
+.detail-content-container {
+  display: flex;
+  justify-content: center;
 }
 
-.title {
+.flag {
+  margin-top: 50px;
+  height: 400px;
+  width: 600px;
+  display: block;
+}
+
+.detail-title {
   text-align: center;
+  margin: 30px;
+  font-size: 30px;
 }
+
 .individual-container {
   background-color: white; /* Adjust color to match your screenshot */
   border-radius: 10px;
@@ -23,4 +33,27 @@
 }
 .stats {
   color: white;
+  margin-bottom: 50px;
+}
+
+.button-container {
+  display: flex;
+  gap: 220px;
+  justify-content: center;
+}
+
+.detail-info-button {
+  background-color: #c0392b; /* Adjust color to match your screenshot */
+  color: white;
+  border: none;
+  height: 50px;
+  padding: 10px 20px;
+  border-radius: 5px;
+  margin-bottom: 40px;
+  cursor: pointer;
+  width: 300px;
+}
+
+.detail-info-button:hover {
+  background-color: #a93226; /* Slightly darker on hover */
 }

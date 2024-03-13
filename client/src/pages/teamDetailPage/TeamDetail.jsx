@@ -30,15 +30,22 @@ function TeamDetail() {
         <h1 className="team-text">{`${teamData.winningNation}!!`}</h1>
       </header>
       <main
+        className="detail-container"
         style={{
           background:
             'url("https://5.imimg.com/data5/SELLER/Default/2020/12/CB/IM/VN/119439370/football-turf.jpg") center/cover no-repeat ',
         }}
       >
-        <img src={teamData.nationImg} alt={teamData.winningNation} />
-        <div>
+        <div className="detail-content-container">
+          <img
+            className="flag"
+            src={teamData.nationImg}
+            alt={teamData.winningNation}
+          />
+        </div>
+        <div className="detail-content-container">
           <aside className="individual-container">
-            <h2 className="title">The Team</h2>
+            <h2 className="detail-title">The Team</h2>
             <h3>{`${teamData.winningNation}'s Captain: ${teamData.captain}`}</h3>
             <img src={teamData.captainImg} alt={teamData.captain} />
             <h3>Manager: {teamData.manager}</h3>
@@ -49,11 +56,10 @@ function TeamDetail() {
               ))}
             </p>
           </aside>
-        </div>
-        <div>
+
           <aside className="individual-container">
-            <h2 className="title">The Match</h2>
-            <h3 className="title">
+            <h2 className="detail-title">The Match</h2>
+            <h3 className="detail-title">
               {teamData.winningNation} vs {teamData.finalOpponent}
             </h3>
             <div className="stats">
@@ -79,11 +85,15 @@ function TeamDetail() {
             />
           </aside>
         </div>
-        <Link to={`/teams/${teamData._id}/edit`}>
-          <button>Edit This Team</button>
-        </Link>
+        <div className="button-container">
+          <Link to={`/teams/${teamData._id}/edit`}>
+            <button className="detail-info-button">Edit This Team</button>
+          </Link>
 
-        <button onClick={handleDelete}>Delete Team</button>
+          <button className="detail-info-button" onClick={handleDelete}>
+            Delete Team
+          </button>
+        </div>
       </main>
     </div>
   );
