@@ -26,7 +26,7 @@ function Team({ team }) {
         </p>
       </div>
       <Link to={`/teams/${team._id}`}>
-        <button className="more-info-button">More Info</button>
+        <button className="info-button">More Info</button>
       </Link>
     </div>
   );

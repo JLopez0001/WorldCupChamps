@@ -17,14 +17,16 @@ function Teams() {
 
   return (
     <div>
-      <h1>Relive the Glory: Witness the Legends of the World Cup!</h1>
+      <header className="team-header">
+        <h1>Relive the Glory: Witness the Legends of the World Cup!</h1>
+      </header>
       <img
         className="world-cup-winner"
         src="https://media-cldnry.s-nbcnews.com/image/upload/t_fit-760w,f_auto,q_auto:best/rockcms/2022-12/221218-argentina-world-cup-trophy-jm-1353-bd9669.jpg"
         alt="world-cup-winner"
       />
+      <h2 className="title">Winners By Year</h2>
       <div className="content-container">
-        <h2 className="title">Winners By Year</h2>
         {teams.map((team) => (
           <Team team={team} key={team._id} />
         ))}
