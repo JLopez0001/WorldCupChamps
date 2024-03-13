@@ -38,12 +38,14 @@ function TeamCreate() {
 
   return (
     <div>
-      <TeamForm
-        id={null}
-        onSubmit={handleSubmit}
-        handleChange={handleChange}
-        teamData={teamData}
-      />
+      <div className="edit-background">
+        <TeamForm
+          id={null}
+          onSubmit={handleSubmit}
+          handleChange={handleChange}
+          teamData={teamData}
+        />
+      </div>
     </div>
   );
 }

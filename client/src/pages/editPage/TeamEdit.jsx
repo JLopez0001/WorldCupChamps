@@ -2,6 +2,7 @@ import React, { useEffect, useState } from "react";
 import TeamForm from "../../components/team/TeamForm.jsx";
 import { useParams, useNavigate } from "react-router-dom";
 import { getTeam, editTeam } from "../../services/teamFunctions/teams.js";
+import "../../styles/team/teamForm.css";
 
 function TeamEdit() {
   const { id } = useParams();
@@ -47,12 +48,14 @@ function TeamEdit() {
 
   return (
     <div>
-      <TeamForm
-        teamData={teamData}
-        id={id}
-        handleChange={handleChange}
-        handleSubmit={handleSubmit}
-      />
+      <div className="edit-background">
+        <TeamForm
+          teamData={teamData}
+          id={id}
+          handleChange={handleChange}
+          handleSubmit={handleSubmit}
+        />
+      </div>
     </div>
   );
 }
