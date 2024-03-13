@@ -1,6 +1,14 @@
 .footer-container {
   background-color: #f9dbbb;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
 }
 .img-links {
   height: 40px;
+  margin-top: 10px;
+}
+
+.footer-content {
+  margin: 5px;
 }
