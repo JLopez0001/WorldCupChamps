@@ -1,25 +1,77 @@
+.about-container {
+  display: flex;
+  flex-direction: column;
+}
+
 .intro {
-  height: 500px;
+  height: 600px;
+  background: url("https://tse3.mm.bing.net/th?id=OIP.LOxpqlpVz15r9mN5HEoXxAHaD_&pid=Api&P=0&h=220")
+    center/cover no-repeat;
+  position: relative;
   color: white;
+}
+
+.header-container {
+  width: 70%;
+  text-align: center;
+  font-size: 30px;
+}
+
+.intro-overlay {
+  background-color: rgba(
+    0,
+    0,
+    0,
+    0.6
+  ); /* Adjust the alpha for darker or lighter */
+  height: 93.3%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
 }
 
 .intro-title {
   margin-top: 0;
+  font-size: 35px;
 }
 
-.kicking-img {
-  height: 300px;
-  width: 300;
+.about-img {
+  height: 350px;
+  width: 400px;
+  margin-left: 200px;
 }
 
+.about-content {
+  width: 60%;
+  font-size: 20px;
+  float: right;
+}
 .aside-container {
   background-color: #4e6e81;
+  height: 400px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.aside-container-2 {
+  background-color: #2e3840;
+  height: 450px;
+  display: flex;
+  align-items: center;
+  flex-direction: row-reverse;
 }
 
+.line-up-img {
+  margin-right: 150px;
+  margin-left: 250px;
+}
 .aside-content {
-  float: right;
+  margin-right: 100px;
+  color: white;
 }
 
 .aside-content-2 {
-  float: left;
+  color: white;
 }
