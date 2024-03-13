@@ -36,7 +36,7 @@ function TeamEdit() {
     }));
   };
 
-  const handleSubmit = async (e) => {
+  const onSubmit = async (e) => {
     e.preventDefault();
     await editTeam(id, teamData);
     navigate(`/teams/${id}`);
@@ -53,7 +53,7 @@ function TeamEdit() {
           teamData={teamData}
           id={id}
           handleChange={handleChange}
-          handleSubmit={handleSubmit}
+          onSubmit={onSubmit}
         />
       </div>
     </div>
