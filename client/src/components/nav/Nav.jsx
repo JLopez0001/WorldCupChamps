@@ -33,7 +33,7 @@ function Nav() {
               to="/teams"
               className={({ isActive }) => getNavLinkClass(isActive)}
             >
-              Home <span className="separator">|</span>
+              Teams <span className="separator">|</span>
             </NavLink>
             <NavLink
               to="/create-team"
